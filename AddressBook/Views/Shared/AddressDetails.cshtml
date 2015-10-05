@@ -1,0 +1,44 @@
+﻿@model AddressBook.Models.Address
+
+<fieldset>
+    <legend>Address</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StreetAddress1)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StreetAddress1)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StreetAddress2)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StreetAddress2)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.State)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ZipCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ZipCode)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.AddressId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

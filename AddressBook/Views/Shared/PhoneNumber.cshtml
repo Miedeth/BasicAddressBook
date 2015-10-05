@@ -1,0 +1,21 @@
+﻿@model AddressBook.Models.PhoneNumber
+
+    <fieldset>
+        <legend>PhoneNumber</legend>
+
+        @Html.HiddenFor(model => model.PhoneNumberId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Number)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Number)
+            @Html.ValidationMessageFor(model => model.Number)
+        </div>
+
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

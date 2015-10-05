@@ -1,0 +1,107 @@
+﻿@model AddressBook.Models.Contact
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Contact</legend>
+
+    <div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.FirstName)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.FirstName)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.MiddleName)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.MiddleName)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.LastName)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.LastName)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.Address.StreetAddress1)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Address.StreetAddress1)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.Address.StreetAddress2)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Address.StreetAddress2)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.Address.City)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Address.City)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.Address.State)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Address.State)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.Address.ZipCode)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.Address.ZipCode)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.HomePhone)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.HomePhone)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.CellPhone)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.CellPhone)
+            </div>
+        </div>
+        <div>
+            <div class="display-label">
+                 @Html.DisplayNameFor(model => model.WorkPhone)
+            </div>
+            <div class="display-field">
+                @Html.DisplayFor(model => model.WorkPhone)
+            </div>
+        </div>
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ContactId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

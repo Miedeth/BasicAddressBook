@@ -1,0 +1,16 @@
+﻿@model AddressBook.Models.PhoneNumber
+
+<fieldset>
+    <legend>PhoneNumber</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Number)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.PhoneNumberId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
